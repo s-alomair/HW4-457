@@ -4,7 +4,7 @@
     <title>Contact - Saleh Alomair</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<script src="scripts.js"></script>
+
 <body>
 
 <header>
@@ -24,12 +24,13 @@
 
     <h2>Send Me a Message</h2>
 
-    <form>
+    <form onsubmit="return validateForm()">
+
         <label>Name:</label><br>
-        <input type="text" name="name"><br><br>
+        <input type="text" id="name" name="name"><br><br>
 
         <label>Email:</label><br>
-        <input type="email" name="email"><br><br>
+        <input type="email" id="email" name="email"><br><br>
 
         <label>Message:</label><br>
         <textarea name="message" rows="5" cols="30"></textarea><br><br>
@@ -49,6 +50,8 @@
 <footer>
     <p>&copy; 2026 Saleh Alomair</p>
 </footer>
+
+<script src="scripts.js"></script>
 
 </body>
 </html>
